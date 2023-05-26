@@ -13,7 +13,7 @@ namespace WordFrequency
             text = Regex.Replace(text, @"[^a-zA-Z ]", "");
 
             List<string> words = text.ToLower().Split(" ").ToList();
-            Dictionary<string, int> freqCounts = new Dictionary<string, int>();
+            var freqCounts = new Dictionary<string, int>();
 
             foreach (string word in words)
             {
